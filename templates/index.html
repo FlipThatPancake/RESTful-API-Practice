@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cafe&Wifi API</title>
+    {{ bootstrap.load_css() }}
+    {% from 'bootstrap5/form.html' import render_form %}
+</head>
+<body>
+    <h1>Welcome to the Cafe & Wifi API</h1>
+    <div>
+        <h2>Add a Cafe</h2>
+        <form action="/add" method="POST">
+            {{ render_form(form) }}
+        </form>
+
+    </div>
+</body>
+</html>
